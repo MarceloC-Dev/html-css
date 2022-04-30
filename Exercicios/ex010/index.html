@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Links externos</h1>
+     <p>Você pode acess'ar <a href="https://www.youtube.com/channel/UCR8S6V3tKC11Y0a8NbDIc8Q">meu canal no YouTube</a></p>
+     <p>Mas para que ele não sobreponha o site que esta aberto, acescentamos o target="_blank" e o rel="external" por exemplo. <br>
+    <p>Você pode acessar <a href="https://www.youtube.com/channel/UCR8S6V3tKC11Y0a8NbDIc8Q" target="_blank" rel="external" >meu canal no YouTube</a></p>
+    <h2>Links Internos</h2>
+    <p>Para irmos para outra pagina que seja no mesmo site, aqui voce irá para a segunda pagina, <a href="pag002.html" rel="next" target="_self">clique aqui</a> </p>
+    <p>Ainda temos a opção de irt para uma pagina que esteja em outra pasta assim usamos o endereço completo como  <a href="newpag/pag003.html" rel="next" target="_self">aqui</a></p>
+    <p>rel = "nofollow" indica que é um link para um site não endossadp, como um link pago</p>
+
+<h1>Links para download</h1>
+<p>É a mesma forma de um link externo ou interno, porem dentro da tag iremos usar os paramentro DOPWNLOAD "local do arquivo" e TYPE="application/"formato do arquivo" e esse ultimo parametro pode mudar de acordo com o fomato de arquivo e podemos ver qual ser ao parametro em <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">iana.org/assignments/media-types/</a> </p>
+<p>Um exemplo de doenload podemos ver aqui... <a href="download/Tarefa 10.rar" download="Tarefa 10.rar">baixar pdf da aula 10</a></p>
+<p>Esse exempo eu usei só o parametro download e deu certo, usando um arquivo winrar.</p>
+</body>
+</html>

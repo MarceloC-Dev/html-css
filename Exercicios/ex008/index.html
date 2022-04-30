@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        mark {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semântica). </p>
+    <p>Nesta frase temos um <strong>texto em destaque</strong> usando a tag STRONG (semântica)</p>
+    <h2>Italico/Ênfase</h2>
+    <p>Nesta frase temos um <i>texto em Italico</i> usando a tag I (não semântica)</p>
+    <p>Nesta frase temos um <em> texto em Ênfase</em> usando a tag EM (semântica)</p>
+
+    <p>Quando usamos a tag B para negrito ou tag I para Italico, estamos usando forma, não tem sentido. O HTML tem que ser semantica e deixamos a forma para o CSS, então usamos em HTML tag que de sentido aquela parte, como STRONG e EM.</p>
+
+    <h2>Texto marcado</h2>
+    <p>Podemos criar um <mark>texto marcado</mark> usando a tag MARK</p>
+    <p>Para mudar a cor da marcação usamos CSS com o parametro "style" se for pontual usamos dentro do "mark" que quremos, caso seja para todos os mark usamos o style no head, como irei usar aqui... <mark>outro texto marcado</mark>
+    </p>
+    <h2>Texto grande e texto pequeno</h2>
+    <p>Nesse paragrafo temos um <big>texto grande</big> e outro <small>texto pequeno</small></p>
+    <p>A tag big está obsoleta, não deve ser usado pois não tem sentido, podemos deixar o texto grande usando CSS. Ja a tag small tem sentido, pois usamos  texto pequeno em algumas situaçoes como em contratos para dar importancia aquela parte.</p>
+    <h2>Texto deletado</h2>
+    <p>POdemos marcar um <del>texto como excluido</del> para indicar que ele deve ser lido mas naão considerado, usamos a tag DEL</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma enfase que ele foi adicionado depois, usamos a tag INS</p>
+    <p> podemos usar a tag U tbm, porém essa é uma forma (não semântica)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Um exemplo disso é x<sup>3</sup>+2, usamos a tag SUP</p>
+    <h2>Texto subscrito</h2>
+    <p>Um exemplo seria a formula da agua H<sub>2</sub>O, usamos a tag SUB </p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir um site em varios dispositivos diferentes ou simplismente aumente o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <p>Para usarmos imagens dinamicas, ou seja, que se adapte de acorde com o dispositivo, temos que ter a imagem em diversos tamanhos diferentes. No exemplo acima usei uma imagem P para celular, com tamanho de 300x300px. Usei imagem M para tablet, com tamanho 700x700px. E uma imagem G para pc e dispositivos maiores, com tamanho 1000x1000px. Aqui usamos a tag picture e dentro dela usamos a tag img, nela carregando a maior imagem a "G" e apos isso colocamos outros parametros, nesse caso o source media, dentro dele colocamos ao inves de "min" colocamos "max" com tamanho de 1050px, e carregamos a foto "M". Depois faremos com a imagem "P" e colocamos 750px. Assim a imagem será carregada de forma compativel com o dispositivo.</p>
+    <p> atributos do source: <br> <ol>
+        <li>type: vai indicar o media type da imagem que usamos (no exemplo usamos o png)</li>
+        <li>srcset: vai configurar o nome da iamgem que será carregada quando o tamanho indicado for atingido </li>
+        <li>media: indica o tamanho maximo a ser considerado para carregar a imagem indicada no atributo srcset.</li>
+    </ol></p>
+    <p> portanto começamops da maior imagem e vamos adcionado as menores na sequencia</p>
+
+    <h1>Áudios com HTML</h1>
+    <p>Para colocarmos audio nmo site usaremos a tag audio, e inserimos o source e type. no source indicamos o local do arquivo e no type, o tipo, que temos como principal MP3, mas temos temos o WAV e o OGG. Se quisermos ter compatibilidade com todos os navagadores, colocamos os tres tipos. e se caso não carregar podemos colocar uma mensagem dizendo para baixar o arquivo. E temos os atributos. <br> <ol>
+        <li>preload: indica se o naudio será pré-carregado ou não e aceita tres valores <ul>
+            <li>matadata: vai carregar aoenas as informaçoes sobre o arquivp</li>
+            <li>none:não vai cvarregar nada até que o usuario aperte no botão de play ou um script inicie a reprodução</li>
+            <li>auto:(padrão) vai carregar o arquivo de audio inteiro assi que a pagina for carrehgada</li>
+        </ul>
+    </li>
+    <li>controls: vai apresentar o player na tela. Caso não seja colocado na tag audio, o controle será transparente e o usuario não podera interagor com ele.</li>
+    <li>autoplay: quando inserido, vai iniciar a reprodução do audio assim que a pagina for carregada</li>
+    <li> loop: o audio srá repetifdo sempre que terminar a reprodução</li>
+     </ol>
+  </p>
+  <p> Exemplo: <br> 
+    <audio preload="metadata" controls loop autoplay >
+        <source src="midias/Floating Home - Brian Bolger.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta esse arquivo <a href="midias/Floating Home - Brian Bolger.mp3" > clique aqui</a> para baixar o arquivo</p>
+    </audio>   
+</p>
+<h1>Video dentro da hospedagem propria</h1> 
+    <p>É a msm coisa do audio, tag video com o source src e , source e type , controls. Porem aqui tbm podemos colocar largura usando width e colocar capa usando poster. em video temos os tipos mp4, m4v , webm e ogv.</p>
+    <p>Esse tipo de forma não é o mais aconselhavel pois consome muitos dados e isso custara dinheiro.</p>
+
+    <h1>Videos de outros sites</h1>
+    <p> Um belo exemplo é pegar do Youtube, copiamos um link que esta em compartilhar, ir em incorporação e copiar aquele codigo e colocar aqui. por exemplo: <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br> é dessa forma que pegamos videos que esta em outro site e não iremos consumir dados (banda) dentro do nosso site e assim ficara bem mais barato.
+    </p>
+</body>
+</html>
